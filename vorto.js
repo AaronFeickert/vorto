@@ -188,7 +188,7 @@ function check() {
 	});
 
 	Array.from(guess).forEach((letter, i) => {
-		if (leftovers.includes(letter)) {
+		if (result[i] != Guess.Valid && leftovers.includes(letter)) {
 			result[i] = Guess.Misplaced;
 		}
 	});
