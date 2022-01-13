@@ -58,9 +58,11 @@ class State {
 		cell.colSpan = Rules.Size;
 		if (winner) {
 			cell.appendChild(document.createTextNode("Hooray! You win."));
+			cell.style.fontSize = "24px";
 			this.scoring.markWin()
 		} else {
 			cell.appendChild(document.createTextNode("Shit! You lose."));
+			cell.style.fontSize = "24px";
 			this.scoring.markLose()
 		}
 
@@ -103,6 +105,7 @@ class Scoring {
 		localStorage.setItem("lose",this.lose.toString());
 
 		this.display();
+		document.getElementById("guess").focus();
 	}
 
 	display() {
