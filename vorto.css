@@ -1,0 +1,71 @@
+body {
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 48px;
+}
+
+form {
+	text-align: center;
+}
+
+form input {
+	font-size: 18px;
+}
+
+/* Tables */
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table tr {
+	margin: 5px;
+}
+
+table tr td {
+	vertical-align: baseline;
+}
+
+/* Guess results */
+#results {
+	text-align: center;
+	font-size: 36px;
+	margin-top: 48px;
+	margin-bottom: 48px;
+}
+
+#results tr {
+	height: 50px;
+}
+
+#results tr td {
+	padding: 10px;
+	width: 50px;
+}
+
+/* Scores */
+#win_icon, #lose_icon {
+	font-size: 36px;
+	padding-right: 10px;
+}
+
+#win, #lose {
+	font-size: 28px;
+	text-align: left;
+	padding-right: 50px;
+}
+
+/* Error */
+#error {
+	font-size:24px;
+}
+
+/* Guess markers */
+#tries {
+	text-align: center;
+	font-size: 24px;
+	margin: 0px;
+}
