@@ -183,7 +183,7 @@ function check() {
 		let error_table = document.getElementById("error");
 		let row = error_table.insertRow();
 		let cell = row.insertCell();
-		cell.appendChild(document.createTextNode("Word not found"));
+		cell.appendChild(document.createTextNode("that's not a word"));
 		return;
 	}
 
