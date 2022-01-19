@@ -178,6 +178,15 @@ function check() {
 	let result = Array(Rules.Size);
 	result.fill(Guess.Invalid);
 
+	// Check if result is a word in the word list
+	if(!Rules.Words.includes(result)){
+		let error_table = document.getElementById("error");
+		let row = error_table.insertRow();
+		let cell = row.insertCell();
+		cell.appendChild(document.createTextNode("Word not found"));
+		return;
+	}
+
 	// Mark valid letters
 	Array.from(guess).forEach((letter, i) => {
 		if (state.word[i] == letter) {
