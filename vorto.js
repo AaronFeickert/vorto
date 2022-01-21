@@ -207,12 +207,15 @@ function check() {
 		switch (result[i]) {
 			case Guess.Invalid:
 				cell.style.backgroundColor = Color.Invalid;
+				cell.title = "This letter is not in the word";
 				break;
 			case Guess.Misplaced:
 				cell.style.backgroundColor = Color.Misplaced;
+				cell.title = "This letter is misplaced";
 				break;
 			case Guess.Valid:
 				cell.style.backgroundColor = Color.Valid;
+				cell.title = "This letter is correct";
 				break;
 		}
 	}
