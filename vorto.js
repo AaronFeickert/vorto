@@ -49,6 +49,7 @@ class State {
 		}
 
 		document.getElementById("tries").innerHTML = tries.join(" ");
+		document.getElementById("tries").title = "You've used " + this.tries.toString() + " of " + Rules.MaxTries.toString() + " tries";
 	}
 
 	end(winner) {
